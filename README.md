@@ -20,7 +20,7 @@ pip install -r requirements.txt
 Contributors / Licensing
 ========================
 
-Generally everything is LICENSE'D under the Apache 2 license by Abram Hindle.
+Generally everything is LICENSE'D under the Apache 2 license by Abram Hindle, Marc-Andre Haley.
 
 freetests.py is LICENSE'D under a BSD-like license:
 
@@ -59,3 +59,12 @@ Contributors
 * Mark Galloway
 * Abram Hindle
 * Cole Mackenzie
+* Marc-Andre Haley
+
+References
+===========
+A lot of the code in sockets.py taken/adapted from the examples from the websocket slides:
+https://github.com/uofa-cmput404/cmput404-slides/blob/master/examples/WebSocketsExamples/chat.py
+
+generating uuid in js: https://stackoverflow.com/questions/105034/how-do-i-create-a-guid-uuid
+
