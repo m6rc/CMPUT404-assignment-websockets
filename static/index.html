@@ -279,17 +279,17 @@ function wsSetup() {
     socket.onopen = function() {
         //XXX: TODO What are you going to do here? 
         //get world?
-        //debug("WebSocket Opened");
+        debug("WebSocket Opened");
         fetch("http://"+host+"/world")  // from fetch() page on mozilla
             .then((response) => response.json())
             .then((data) => world = data);
     };
     socket.onerror = function(msg) {
-        //debug("WebSocket Error:" + msg.data);
+        debug("WebSocket Error:" + msg.data);
     };
     socket.onmessage = function(msg) {  
         try {
-            //debug("WebSocket Recv:" + msg.data);
+            debug("WebSocket Recv:" + msg.data);
             //XXX: TODO What are you going to do here? 
             //update world?
             var data = JSON.parse(msg.data); 
